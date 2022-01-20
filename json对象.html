@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var a = '嘻嘻';
+        var b = 200;
+        var c = 'hello word';
+
+        var obj = { 
+            a : a,
+            b : b,
+            c : c
+        };
+        console.log(obj);
+        var result = JSON.stringify(obj);
+        console.log(result);
+        console.log(JSON.parse(result));
+    </script>
+</body>
+</html>

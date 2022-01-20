@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // c有默认值的情况
+function side1(arr) {
+    arr[0] = arr[2];
+}
+function a(a, b, c = 3) {
+    c = 10;
+    side1(arguments);
+    return a + b + c; 
+}
+console.log(a(1, 1, 1));
+
+// c没有默认值的情况
+function side2(arr) {
+    arr[0] = arr[2];
+}
+function b(a, b, c) {
+    c = 10;
+    side2(arguments);  
+    return a + b + c;
+}
+console.log(b(1, 1, 1));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="c1">
+    <label for="c1">足球</label>
+    <input type="checkbox" id="c2">
+    <label for="c2">蓝球</label>
+    <input type="checkbox" id="c3">
+    <label for="c3">网球</label>
+    <input type="checkbox" id="c4">
+    <label for="c1">排球</label>
+    <button>全选</button>
+    <button>全不选</button>
+    <button>反选</button>
+    <script>
+        window.onload = function(){
+            var btn = document.querySelectorAll('button');
+            var inputNodes = document.querySelectorAll('input');
+            //全选
+            btn[0].onclick = function(){
+                for(var i = 0 ; i<inputNodes.length ; i++){
+                    inputNodes[i].checked = true ;
+                }
+            }
+            btn[1].onclick = function(){
+                for(var i = 0 ; i<inputNodes.length ; i++){
+                    inputNodes[i].checked = false ;
+                }
+            }
+            btn[2].onclick = function(){
+                for(var i = 0 ; i<inputNodes.length ; i++){
+                    inputNodes[i].checked = !inputNodes[i].checked ;
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>

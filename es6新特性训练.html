@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let count = (num1, num2) => {
+        return num1 + num2;
+      };
+      console.log(count(1, 2));
+
+      let gailun = {
+        Q: "致命打击",
+      };
+      let gailun1 = {
+        w: "勇气哦i",
+      };
+      let gailunxixi = { ...gailun, ...gailun1 };
+      console.log(gailunxixi);
+      let arr = ["1xixi", "2haha", "3guga"];
+      let result = function () {
+        console.log(arguments); //此arguments等于。。。arr
+      };
+      result(...arr);
+    </script>
+  </body>
+</html>
